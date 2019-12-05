@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:StudiokiController-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -141,7 +142,7 @@ Connection ~ 4350 3950
 Wire Wire Line
 	4350 3950 4350 4050
 Text HLabel 5450 3850 0    50   Input ~ 0
-PIN
+RES
 Wire Wire Line
 	5450 3850 5600 3850
 Wire Wire Line

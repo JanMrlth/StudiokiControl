@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:StudiokiController-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -40,9 +41,10 @@ L Interface_USB:CH340G U1
 U 1 1 5DE8682B
 P 1900 6800
 F 0 "U1" H 1900 6111 50  0000 C CNN
-F 1 "CH340G" H 1900 6020 50  0000 C CNN
+F 1 "CH340C" H 1900 6020 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 1950 6250 50  0001 L CNN
 F 3 "http://www.datasheet5.com/pdf-local-2195953" H 1550 7600 50  0001 C CNN
+F 4 "C84681" H 1900 6800 50  0001 C CNN "LCSC Part #"
 	1    1900 6800
 	1    0    0    -1  
 $EndComp
@@ -327,7 +329,7 @@ F1 "OLEDDisplay.sch" 50
 F2 "GND" I L 9900 2000 50 
 F3 "SDA" I L 9900 1900 50 
 F4 "SCL" I L 9900 1800 50 
-F5 "PIN" I L 9900 1700 50 
+F5 "RES" I L 9900 1700 50 
 F6 "3V3" I L 9900 1600 50 
 $EndSheet
 $Comp
@@ -442,9 +444,9 @@ SCL
 Text GLabel 3650 3400 2    50   Output ~ 0
 SDA
 Text GLabel 3650 2600 2    50   Output ~ 0
-DISPLAY
+DISP_RES
 Text GLabel 9900 1700 0    50   Input ~ 0
-DISPLAY
+DISP_RES
 Text GLabel 9900 1800 0    50   Input ~ 0
 SCL
 Text GLabel 9900 1900 0    50   Input ~ 0
