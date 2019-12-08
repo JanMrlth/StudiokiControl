@@ -1,7 +1,6 @@
 (sym_lib_table
-  (lib (name SamacSys_Parts)(type Legacy)(uri ${KIPRJMOD}/lib/SamacSys_Parts.lib)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type Legacy)(uri ${KIPRJMOD}/lib/SamacSys_Parts.lib)(options "")(descr "Din "))
   (lib (name OJE-SH-112HM_000)(type Legacy)(uri ${KIPRJMOD}/lib/OJE-SH-112HM_000.lib)(options "")(descr ""))
   (lib (name WJ142R-5.08-3P)(type Legacy)(uri ${KIPRJMOD}/lib/WJ142R-5.08-3P.lib)(options "")(descr ""))
   (lib (name RAC03-12SK)(type Legacy)(uri ${KIPRJMOD}/lib/RAC03-12SK.lib)(options "")(descr ""))
-  (lib (name TSA063G50-250)(type Legacy)(uri ${KIPRJMOD}/lib/TSA063G50-250.lib)(options "")(descr ""))
 )
