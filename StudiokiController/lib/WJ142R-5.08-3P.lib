@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model WJ142R-5.08-3P
+#/2372068/202970/2.44/6/4/Connector
+DEF WJ142R-5.08-3P J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "WJ142R-5.08-3P" 650 200 50 H V L CNN
+F2 "RHDR6W120P762X508_2X3_1524X1410X1355P" 650 100 50 H I L CNN
+F3 "https://datasheet.lcsc.com/szlcsc/Ningbo-Kangnex-Elec-WJ142R-5-08-3P_C80054.pdf" 650 0 50 H I L CNN
+F4 "Spring Clamp System Terminal Block Through Hole,P=5.08mm RoHS" 650 -100 50 H I L CNN "Description"
+F5 "13.55" 650 -200 50 H I L CNN "Height"
+F6 "C80054" 650 -300 50 H I L CNN "LCSC Part Number"
+F7 "https://lcsc.com/product-detail/Spring-Clamp-System-Terminal-Block_Ningbo-Kangnex-Elec-WJ142R-5-08-3P_C80054.html" 650 -400 50 H I L CNN "LCSC Price/Stock"
+F8 "Ningbo Kangnex Electric" 650 -500 50 H I L CNN "Manufacturer_Name"
+F9 "WJ142R-5.08-3P" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 U
+X 3 3 0 -100 200 R 50 50 0 0 U
+X 5 5 0 -200 200 R 50 50 0 0 U
+X 2 2 800 0 200 L 50 50 0 0 U
+X 4 4 800 -100 200 L 50 50 0 0 U
+X 6 6 800 -200 200 L 50 50 0 0 U
+P 5 0 1 6 200 100 600 100 600 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

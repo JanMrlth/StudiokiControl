@@ -1,3 +1,5 @@
 (fp_lib_table
   (lib (name StudiokiController)(type KiCad)(uri ${KIPRJMOD}/StudiokiController.pretty)(options "")(descr ""))
+  (lib (name RAC03-12SK)(type Legacy)(uri ${KIPRJMOD}/StudiokiController.pretty/RAC03-12SK.mod)(options "")(descr ""))
+  (lib (name WJ142R-5.08-3P)(type Legacy)(uri ${KIPRJMOD}/StudiokiController.pretty/WJ142R-5.08-3P.mod)(options "")(descr ""))
 )
