@@ -9,3 +9,6 @@ This project consists of
 * Hardware in Fusion360 - published as steps
 * Software in Python
 
+
+
+https://github.com/espressif/esptool/wiki/ESP32-Boot-Mode-Selection
