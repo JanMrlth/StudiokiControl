@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -321,32 +321,6 @@ F 3 "" H 3300 1500 50  0001 C CNN
 	1    3300 1500
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 10250 800  550  700 
-U 5DEA5D00
-F0 "OLEDDisplay" 50
-F1 "OLEDDisplay.sch" 50
-F2 "GND" I L 10250 1350 50 
-F3 "SDA" I L 10250 1250 50 
-F4 "SCL" I L 10250 1150 50 
-F5 "RES" I L 10250 1050 50 
-F6 "3V3" I L 10250 950 50 
-$EndSheet
-$Comp
-L power:GND #PWR010
-U 1 1 5DECB7F9
-P 10050 1450
-F 0 "#PWR010" H 10050 1200 50  0001 C CNN
-F 1 "GND" H 10055 1277 50  0000 C CNN
-F 2 "" H 10050 1450 50  0001 C CNN
-F 3 "" H 10050 1450 50  0001 C CNN
-	1    10050 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10250 1350 10050 1350
-Wire Wire Line
-	10050 1350 10050 1450
 $Comp
 L power:GND #PWR011
 U 1 1 5DED5A6C
@@ -394,23 +368,15 @@ Text GLabel 2600 6400 2    50   Output ~ 0
 USB_TX
 Text GLabel 2600 6500 2    50   Output ~ 0
 USB_RX
-Text GLabel 2850 2850 2    50   Output ~ 0
+Text GLabel 2850 2150 2    50   Output ~ 0
 SW1
-Text GLabel 2850 2950 2    50   Output ~ 0
+Text GLabel 2850 2750 2    50   Output ~ 0
 SW2
-Text GLabel 2850 3050 2    50   Output ~ 0
+Text GLabel 2850 2850 2    50   Output ~ 0
 SW3
 Text GLabel 2850 2450 2    50   Output ~ 0
 SCL
 Text GLabel 1650 3150 0    50   Output ~ 0
-SDA
-Text GLabel 2850 2150 2    50   Output ~ 0
-DISP_RES
-Text GLabel 10250 1050 0    50   Input ~ 0
-DISP_RES
-Text GLabel 10250 1150 0    50   Input ~ 0
-SCL
-Text GLabel 10250 1250 0    50   Input ~ 0
 SDA
 Wire Wire Line
 	3400 7350 3400 7550
@@ -459,21 +425,6 @@ F 3 "" H 3450 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3450 900 
-$Comp
-L power:+3.3V #PWR09
-U 1 1 5DEE4F89
-P 10050 850
-F 0 "#PWR09" H 10050 700 50  0001 C CNN
-F 1 "+3.3V" H 10065 1023 50  0000 C CNN
-F 2 "" H 10050 850 50  0001 C CNN
-F 3 "" H 10050 850 50  0001 C CNN
-	1    10050 850 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10050 850  10050 950 
-Wire Wire Line
-	10050 950  10250 950 
 $Comp
 L Sensor_Temperature:MAX31855KASA U3
 U 1 1 5DE992BB
@@ -610,12 +561,6 @@ F 3 "~" H 5200 1150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4800 1200 5050 1200
-Wire Wire Line
-	5050 1200 5050 1150
-Wire Wire Line
-	4800 1300 5200 1300
-Wire Wire Line
 	5500 1300 5500 1550
 $Comp
 L power:GND #PWR0105
@@ -643,7 +588,6 @@ Text GLabel 5200 1350 3    50   UnSpc ~ 0
 230V-N
 Wire Wire Line
 	5200 1350 5200 1300
-Connection ~ 5200 1300
 Wire Wire Line
 	5200 1300 5500 1300
 $Comp
@@ -671,53 +615,18 @@ Wire Wire Line
 Connection ~ 5400 1150
 Wire Wire Line
 	5400 1150 5500 1150
-$Comp
-L WJ142R-5.08-3P:WJ142R-5.08-3P J7
-U 1 1 5DEF3D54
-P 5350 2850
-F 0 "J7" H 5750 3115 50  0000 C CNN
-F 1 "WJ142R-5.08-3P" H 5750 3024 50  0000 C CNN
-F 2 "RHDR6W120P762X508_2X3_1524X1410X1355P" H 6000 2950 50  0001 L CNN
-F 3 "" H 6000 2850 50  0001 L CNN
-F 4 "Spring Clamp System Terminal Block Through Hole,P=5.08mm RoHS" H 6000 2750 50  0001 L CNN "Description"
-F 5 "13.55" H 6000 2650 50  0001 L CNN "Height"
-F 6 "C80054" H 6000 2550 50  0001 L CNN "LCSC Part Number"
-F 7 "https://lcsc.com/product-detail/Spring-Clamp-System-Terminal-Block_Ningbo-Kangnex-Elec-WJ142R-5-08-3P_C80054.html" H 6000 2450 50  0001 L CNN "LCSC Price/Stock"
-F 8 "Ningbo Kangnex Electric" H 6000 2350 50  0001 L CNN "Manufacturer_Name"
-F 9 "WJ142R-5.08-3P" H 6000 2250 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5350 2850
-	1    0    0    -1  
-$EndComp
-Text GLabel 5350 2500 2    50   UnSpc ~ 0
-230V-N
-Text GLabel 5250 4300 2    50   UnSpc ~ 0
-230V-L
 Text GLabel 4400 3050 0    50   Input ~ 0
 RELAY1
-Text GLabel 2850 3550 2    50   Output ~ 0
+Text GLabel 2850 3650 2    50   Output ~ 0
 RELAY1
 Text GLabel 4400 4000 0    50   Input ~ 0
 RELAY2
-Text GLabel 2850 3650 2    50   Output ~ 0
+Text GLabel 2850 3550 2    50   Output ~ 0
 RELAY2
 Wire Wire Line
 	4400 3050 4500 3050
 Wire Wire Line
 	4400 4000 4500 4000
-Wire Wire Line
-	5350 2500 5250 2500
-Wire Wire Line
-	5250 2500 5250 2850
-Wire Wire Line
-	5250 2850 5350 2850
-Wire Wire Line
-	5350 2950 5250 2950
-Wire Wire Line
-	5250 2950 5250 3200
-Wire Wire Line
-	5250 3200 5150 3200
-Wire Wire Line
-	5150 4250 5250 4250
 $Comp
 L power:+12V #PWR0107
 U 1 1 5DF508D2
@@ -762,17 +671,6 @@ F 3 "" H 4500 4500 50  0001 C CNN
 	1    4500 4500
 	0    1    1    0   
 $EndComp
-$Sheet
-S 4500 3900 650  700 
-U 5DF55D6C
-F0 "sheet5DF55D65" 50
-F1 "230V-Relay.sch" 50
-F2 "INPUT-3V3" I L 4500 4000 50 
-F3 "OUTPUT-A" O R 5150 4150 50 
-F4 "OUTPUT-B" O R 5150 4250 50 
-F5 "GND" U L 4500 4500 50 
-F6 "12V" U L 4500 4400 50 
-$EndSheet
 $Comp
 L Switch:SW_Push SW3
 U 1 1 5DECE2C3
@@ -799,8 +697,6 @@ Text GLabel 10000 3300 0    50   Input ~ 0
 SW3
 Text GLabel 10000 2700 0    50   Input ~ 0
 SW2
-Text GLabel 10000 2100 0    50   Input ~ 0
-SW1
 $Comp
 L Device:C C10
 U 1 1 5DED7F38
@@ -902,12 +798,6 @@ F4 "OUTPUT-B" O R 5150 3300 50
 F5 "GND" U L 4500 3550 50 
 F6 "12V" U L 4500 3450 50 
 $EndSheet
-Wire Wire Line
-	5250 4150 5150 4150
-Wire Wire Line
-	5150 3300 5250 3300
-Text GLabel 5250 5500 2    50   UnSpc ~ 0
-230V-L
 Text GLabel 4400 5050 0    50   Input ~ 0
 RELAY3
 Wire Wire Line
@@ -934,51 +824,7 @@ F 3 "" H 4500 5550 50  0001 C CNN
 	1    4500 5550
 	0    1    1    0   
 $EndComp
-$Comp
-L WJ142R-5.08-3P:WJ142R-5.08-3P J2
-U 1 1 5DF3D8D9
-P 5450 5100
-F 0 "J2" H 5850 5365 50  0000 C CNN
-F 1 "WJ142R-5.08-3P" H 5850 5274 50  0000 C CNN
-F 2 "RHDR6W120P762X508_2X3_1524X1410X1355P" H 6100 5200 50  0001 L CNN
-F 3 "" H 6100 5100 50  0001 L CNN
-F 4 "Spring Clamp System Terminal Block Through Hole,P=5.08mm RoHS" H 6100 5000 50  0001 L CNN "Description"
-F 5 "13.55" H 6100 4900 50  0001 L CNN "Height"
-F 6 "C80054" H 6100 4800 50  0001 L CNN "LCSC Part Number"
-F 7 "https://lcsc.com/product-detail/Spring-Clamp-System-Terminal-Block_Ningbo-Kangnex-Elec-WJ142R-5-08-3P_C80054.html" H 6100 4700 50  0001 L CNN "LCSC Price/Stock"
-F 8 "Ningbo Kangnex Electric" H 6100 4600 50  0001 L CNN "Manufacturer_Name"
-F 9 "WJ142R-5.08-3P" H 6100 4500 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5450 5100
-	1    0    0    -1  
-$EndComp
-Text GLabel 5450 4750 2    50   UnSpc ~ 0
-230V-N
-Wire Wire Line
-	5450 5100 5350 5100
-Wire Wire Line
-	5350 5100 5350 4750
-Wire Wire Line
-	5350 4750 5450 4750
-Wire Wire Line
-	5350 2850 6150 2850
-Connection ~ 5350 2850
-Wire Wire Line
-	5350 2950 6150 2950
-Connection ~ 5350 2950
-Wire Wire Line
-	5350 3050 6150 3050
-Wire Wire Line
-	5450 5100 6250 5100
-Connection ~ 5450 5100
-Wire Wire Line
-	6250 5200 5450 5200
-Wire Wire Line
-	5450 5300 6250 5300
-Text GLabel 6150 3050 2    50   UnSpc ~ 0
-PE
-Text GLabel 6250 5300 2    50   UnSpc ~ 0
-PE
-Text GLabel 4800 1400 2    50   UnSpc ~ 0
+Text GLabel 4700 1100 2    50   UnSpc ~ 0
 PE
 Text GLabel 2850 3750 2    50   Output ~ 0
 LED1
@@ -994,13 +840,6 @@ Wire Wire Line
 	9000 5600 9000 5700
 Wire Wire Line
 	9000 5800 9000 5850
-Wire Wire Line
-	5250 4250 5250 4300
-Wire Wire Line
-	5250 3300 5250 4150
-Wire Wire Line
-	5450 5200 5150 5200
-Connection ~ 5450 5200
 $Comp
 L Regulator_Linear:AZ1117-3.3 U4
 U 1 1 5DFA047D
@@ -1093,7 +932,7 @@ U 1 1 5DFD4311
 P 8350 2100
 F 0 "J3" H 8378 2076 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 8378 1985 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8350 2100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8350 2100 50  0001 C CNN
 F 3 "~" H 8350 2100 50  0001 C CNN
 	1    8350 2100
 	1    0    0    -1  
@@ -1104,7 +943,7 @@ U 1 1 5DFE2341
 P 8600 2100
 F 0 "J8" H 8628 2076 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 8628 1985 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8600 2100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8600 2100 50  0001 C CNN
 F 3 "~" H 8600 2100 50  0001 C CNN
 	1    8600 2100
 	1    0    0    -1  
@@ -1115,7 +954,7 @@ U 1 1 5DFE5A2C
 P 8850 2100
 F 0 "J9" H 8878 2076 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 8878 1985 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8850 2100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8850 2100 50  0001 C CNN
 F 3 "~" H 8850 2100 50  0001 C CNN
 	1    8850 2100
 	1    0    0    -1  
@@ -1226,111 +1065,105 @@ F4 "OUTPUT-B" O R 5150 5300 50
 F5 "GND" U L 4500 5550 50 
 F6 "12V" U L 4500 5450 50 
 $EndSheet
-Wire Wire Line
-	5150 5300 5200 5300
-Wire Wire Line
-	5200 5300 5200 5500
-Wire Wire Line
-	5200 5500 5250 5500
-Text GLabel 10100 4000 0    50   Input ~ 0
+Text GLabel 9950 4000 0    50   Input ~ 0
 LED1
 $Comp
 L Device:LED D5
 U 1 1 5E04C2AC
-P 10350 4000
+P 10200 4000
 AR Path="/5E04C2AC" Ref="D5"  Part="1" 
 AR Path="/5DF2D1A8/5E04C2AC" Ref="D?"  Part="1" 
 AR Path="/5DF3EB9E/5E04C2AC" Ref="D?"  Part="1" 
 AR Path="/5DF55D6C/5E04C2AC" Ref="D?"  Part="1" 
 AR Path="/5DF376BF/5E04C2AC" Ref="D?"  Part="1" 
-F 0 "D5" V 10389 3883 50  0000 R CNN
-F 1 "LED" V 10298 3883 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 10350 4000 50  0001 C CNN
-F 3 "~" H 10350 4000 50  0001 C CNN
-	1    10350 4000
+F 0 "D5" V 10239 3883 50  0000 R CNN
+F 1 "LED" V 10148 3883 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 10200 4000 50  0001 C CNN
+F 3 "~" H 10200 4000 50  0001 C CNN
+	1    10200 4000
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0125
 U 1 1 5E050737
-P 10650 4000
-F 0 "#PWR0125" H 10650 3750 50  0001 C CNN
-F 1 "GND" V 10655 3872 50  0000 R CNN
-F 2 "" H 10650 4000 50  0001 C CNN
-F 3 "" H 10650 4000 50  0001 C CNN
-	1    10650 4000
+P 10800 4000
+F 0 "#PWR0125" H 10800 3750 50  0001 C CNN
+F 1 "GND" V 10805 3872 50  0000 R CNN
+F 2 "" H 10800 4000 50  0001 C CNN
+F 3 "" H 10800 4000 50  0001 C CNN
+	1    10800 4000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10650 4000 10500 4000
+	10500 4000 10350 4000
 Wire Wire Line
-	10200 4000 10100 4000
-Text GLabel 10100 4350 0    50   Input ~ 0
+	10050 4000 9950 4000
+Text GLabel 9950 4350 0    50   Input ~ 0
 LED2
 $Comp
 L Device:LED D6
 U 1 1 5E05C9C0
-P 10350 4350
+P 10200 4350
 AR Path="/5E05C9C0" Ref="D6"  Part="1" 
 AR Path="/5DF2D1A8/5E05C9C0" Ref="D?"  Part="1" 
 AR Path="/5DF3EB9E/5E05C9C0" Ref="D?"  Part="1" 
 AR Path="/5DF55D6C/5E05C9C0" Ref="D?"  Part="1" 
 AR Path="/5DF376BF/5E05C9C0" Ref="D?"  Part="1" 
-F 0 "D6" V 10389 4233 50  0000 R CNN
-F 1 "LED" V 10298 4233 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 10350 4350 50  0001 C CNN
-F 3 "~" H 10350 4350 50  0001 C CNN
-	1    10350 4350
+F 0 "D6" V 10239 4233 50  0000 R CNN
+F 1 "LED" V 10148 4233 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 10200 4350 50  0001 C CNN
+F 3 "~" H 10200 4350 50  0001 C CNN
+	1    10200 4350
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0126
 U 1 1 5E05C9C6
-P 10650 4350
-F 0 "#PWR0126" H 10650 4100 50  0001 C CNN
-F 1 "GND" V 10655 4222 50  0000 R CNN
-F 2 "" H 10650 4350 50  0001 C CNN
-F 3 "" H 10650 4350 50  0001 C CNN
-	1    10650 4350
+P 10800 4350
+F 0 "#PWR0126" H 10800 4100 50  0001 C CNN
+F 1 "GND" V 10805 4222 50  0000 R CNN
+F 2 "" H 10800 4350 50  0001 C CNN
+F 3 "" H 10800 4350 50  0001 C CNN
+	1    10800 4350
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10650 4350 10500 4350
+	10500 4350 10350 4350
 Wire Wire Line
-	10200 4350 10100 4350
-Text GLabel 10100 4700 0    50   Input ~ 0
+	10050 4350 9950 4350
+Text GLabel 9950 4700 0    50   Input ~ 0
 LED3
 $Comp
 L Device:LED D7
 U 1 1 5E06221E
-P 10350 4700
+P 10200 4700
 AR Path="/5E06221E" Ref="D7"  Part="1" 
 AR Path="/5DF2D1A8/5E06221E" Ref="D?"  Part="1" 
 AR Path="/5DF3EB9E/5E06221E" Ref="D?"  Part="1" 
 AR Path="/5DF55D6C/5E06221E" Ref="D?"  Part="1" 
 AR Path="/5DF376BF/5E06221E" Ref="D?"  Part="1" 
-F 0 "D7" V 10389 4583 50  0000 R CNN
-F 1 "LED" V 10298 4583 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 10350 4700 50  0001 C CNN
-F 3 "~" H 10350 4700 50  0001 C CNN
-	1    10350 4700
+F 0 "D7" V 10239 4583 50  0000 R CNN
+F 1 "LED" V 10148 4583 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 10200 4700 50  0001 C CNN
+F 3 "~" H 10200 4700 50  0001 C CNN
+	1    10200 4700
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0127
 U 1 1 5E062224
-P 10650 4700
-F 0 "#PWR0127" H 10650 4450 50  0001 C CNN
-F 1 "GND" V 10655 4572 50  0000 R CNN
-F 2 "" H 10650 4700 50  0001 C CNN
-F 3 "" H 10650 4700 50  0001 C CNN
-	1    10650 4700
+P 10800 4700
+F 0 "#PWR0127" H 10800 4450 50  0001 C CNN
+F 1 "GND" V 10805 4572 50  0000 R CNN
+F 2 "" H 10800 4700 50  0001 C CNN
+F 3 "" H 10800 4700 50  0001 C CNN
+	1    10800 4700
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10650 4700 10500 4700
+	10500 4700 10350 4700
 Wire Wire Line
-	10200 4700 10100 4700
+	10050 4700 9950 4700
 $Comp
 L power:GND #PWR0128
 U 1 1 5E0720F3
@@ -1342,29 +1175,257 @@ F 3 "" H 2250 4350 50  0001 C CNN
 	1    2250 4350
 	1    0    0    -1  
 $EndComp
+Text GLabel 2850 3450 2    50   Output ~ 0
+RELAY3
 $Comp
-L WJ142R-5.08-3P:WJ142R-5.08-3P J6
-U 1 1 5E0C522E
-P 4000 1200
-F 0 "J6" H 4400 1465 50  0000 C CNN
-F 1 "WJ142R-5.08-3P" H 4400 1374 50  0000 C CNN
-F 2 "RHDR6W120P762X508_2X3_1524X1410X1355P" H 4650 1300 50  0001 L CNN
-F 3 "" H 4650 1200 50  0001 L CNN
-F 4 "Spring Clamp System Terminal Block Through Hole,P=5.08mm RoHS" H 4650 1100 50  0001 L CNN "Description"
-F 5 "13.55" H 4650 1000 50  0001 L CNN "Height"
-F 6 "C80054" H 4650 900 50  0001 L CNN "LCSC Part Number"
-F 7 "https://lcsc.com/product-detail/Spring-Clamp-System-Terminal-Block_Ningbo-Kangnex-Elec-WJ142R-5-08-3P_C80054.html" H 4650 800 50  0001 L CNN "LCSC Price/Stock"
-F 8 "Ningbo Kangnex Electric" H 4650 700 50  0001 L CNN "Manufacturer_Name"
-F 9 "WJ142R-5.08-3P" H 4650 600 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4000 1200
+L Connector:Screw_Terminal_01x03 J11
+U 1 1 5DF1E255
+P 5800 5200
+F 0 "J11" H 5880 5242 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 5880 5151 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 5800 5200 50  0001 C CNN
+F 3 "~" H 5800 5200 50  0001 C CNN
+	1    5800 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 1200 4800 1200
+	5600 5200 5150 5200
+$Sheet
+S 4500 3900 650  700 
+U 5DF55D6C
+F0 "sheet5DF55D65" 50
+F1 "230V-Relay.sch" 50
+F2 "INPUT-3V3" I L 4500 4000 50 
+F3 "OUTPUT-A" O R 5150 4150 50 
+F4 "OUTPUT-B" O R 5150 4250 50 
+F5 "GND" U L 4500 4500 50 
+F6 "12V" U L 4500 4400 50 
+$EndSheet
+$Comp
+L Connector:Screw_Terminal_01x03 J7
+U 1 1 5DF33287
+P 5800 4150
+F 0 "J7" H 5880 4192 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 5880 4101 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 5800 4150 50  0001 C CNN
+F 3 "~" H 5800 4150 50  0001 C CNN
+	1    5800 4150
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4000 1300 4800 1300
+	5600 4150 5150 4150
+$Comp
+L Connector:Screw_Terminal_01x03 J6
+U 1 1 5DF3805F
+P 5800 3200
+F 0 "J6" H 5880 3242 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 5880 3151 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 5800 3200 50  0001 C CNN
+F 3 "~" H 5800 3200 50  0001 C CNN
+	1    5800 3200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4000 1400 4800 1400
-Text GLabel 2850 3450 2    50   Output ~ 0
-RELAY3
+	5600 3200 5150 3200
+$Comp
+L Connector:Screw_Terminal_01x03 J2
+U 1 1 5DF53B65
+P 4500 1200
+F 0 "J2" H 4418 1517 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 4418 1426 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 4500 1200 50  0001 C CNN
+F 3 "~" H 4500 1200 50  0001 C CNN
+	1    4500 1200
+	-1   0    0    -1  
+$EndComp
+Connection ~ 5200 1300
+Text GLabel 10000 2100 0    50   Input ~ 0
+SW1
+$Comp
+L Connector:Conn_01x10_Male J10
+U 1 1 5E06B246
+P 9050 4250
+F 0 "J10" H 9158 4831 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 9158 4740 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 9050 4250 50  0001 C CNN
+F 3 "~" H 9050 4250 50  0001 C CNN
+	1    9050 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 9250 4050 2    50   Input ~ 0
+IO0
+Text GLabel 9250 4250 2    50   Input ~ 0
+SCL
+Text GLabel 9250 4350 2    50   Input ~ 0
+SDA
+$Comp
+L power:+3V3 #PWR0111
+U 1 1 5E06D1CB
+P 9250 3850
+F 0 "#PWR0111" H 9250 3700 50  0001 C CNN
+F 1 "+3V3" H 9265 4023 50  0000 C CNN
+F 2 "" H 9250 3850 50  0001 C CNN
+F 3 "" H 9250 3850 50  0001 C CNN
+	1    9250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5E06F041
+P 9250 4650
+F 0 "#PWR0113" H 9250 4400 50  0001 C CNN
+F 1 "GND" V 9255 4522 50  0000 R CNN
+F 2 "" H 9250 4650 50  0001 C CNN
+F 3 "" H 9250 4650 50  0001 C CNN
+	1    9250 4650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9250 3950 2    50   Input ~ 0
+EN
+Text GLabel 9250 4450 2    50   Input ~ 0
+SW1
+Text GLabel 9250 4550 2    50   Input ~ 0
+SW2
+Text GLabel 9250 4750 2    50   Input ~ 0
+SW3
+Text GLabel 2850 1950 2    50   Output ~ 0
+IO2
+Text GLabel 9250 4150 2    50   Input ~ 0
+IO2
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E10AE94
+P 6100 6900
+F 0 "H1" H 6200 6946 50  0000 L CNN
+F 1 "MountingHole" H 6200 6855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 6100 6900 50  0001 C CNN
+F 3 "~" H 6100 6900 50  0001 C CNN
+	1    6100 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E118701
+P 6100 7100
+F 0 "H2" H 6200 7146 50  0000 L CNN
+F 1 "MountingHole" H 6200 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 6100 7100 50  0001 C CNN
+F 3 "~" H 6100 7100 50  0001 C CNN
+	1    6100 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E11D939
+P 6100 7300
+F 0 "H3" H 6200 7346 50  0000 L CNN
+F 1 "MountingHole" H 6200 7255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 6100 7300 50  0001 C CNN
+F 3 "~" H 6100 7300 50  0001 C CNN
+	1    6100 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5E122B6C
+P 6100 7500
+F 0 "H4" H 6200 7546 50  0000 L CNN
+F 1 "MountingHole" H 6200 7455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 6100 7500 50  0001 C CNN
+F 3 "~" H 6100 7500 50  0001 C CNN
+	1    6100 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E14ACC5
+P 10650 4000
+F 0 "R7" V 10443 4000 50  0000 C CNN
+F 1 "100" V 10534 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10580 4000 50  0001 C CNN
+F 3 "~" H 10650 4000 50  0001 C CNN
+	1    10650 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5E14C0A7
+P 10650 4350
+F 0 "R9" V 10443 4350 50  0000 C CNN
+F 1 "100" V 10534 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10580 4350 50  0001 C CNN
+F 3 "~" H 10650 4350 50  0001 C CNN
+	1    10650 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5E151540
+P 10650 4700
+F 0 "R10" V 10443 4700 50  0000 C CNN
+F 1 "100" V 10534 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10580 4700 50  0001 C CNN
+F 3 "~" H 10650 4700 50  0001 C CNN
+	1    10650 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Varistor RV1
+U 1 1 5E19EF96
+P 4900 1450
+F 0 "RV1" V 4642 1450 50  0000 C CNN
+F 1 "MOV-07D391KTR" V 4733 1450 50  0000 C CNN
+F 2 "Varistor:RV_Disc_D7mm_W4.5mm_P5mm" V 4830 1450 50  0001 C CNN
+F 3 "~" H 4900 1450 50  0001 C CNN
+	1    4900 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 1300 5050 1300
+Wire Wire Line
+	4700 1200 4750 1200
+Wire Wire Line
+	5050 1200 5050 1150
+Wire Wire Line
+	4750 1450 4750 1200
+Connection ~ 4750 1200
+Wire Wire Line
+	4750 1200 5050 1200
+Wire Wire Line
+	5050 1450 5050 1300
+Connection ~ 5050 1300
+Wire Wire Line
+	5050 1300 5200 1300
+$Comp
+L Connector:Screw_Terminal_01x02 J12
+U 1 1 5E1C460E
+P 10400 1100
+F 0 "J12" H 10480 1092 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 10480 1001 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 10400 1100 50  0001 C CNN
+F 3 "~" H 10400 1100 50  0001 C CNN
+	1    10400 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5E1C6709
+P 10200 1200
+F 0 "#PWR0114" H 10200 950 50  0001 C CNN
+F 1 "GND" H 10205 1027 50  0000 C CNN
+F 2 "" H 10200 1200 50  0001 C CNN
+F 3 "" H 10200 1200 50  0001 C CNN
+	1    10200 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2850 2350 2    50   Input ~ 0
+DOOR
+Text GLabel 10200 1100 0    50   Output ~ 0
+DOOR
+Wire Wire Line
+	5150 3300 5600 3300
+Wire Wire Line
+	5150 4250 5600 4250
+Wire Wire Line
+	5150 5300 5600 5300
 $EndSCHEMATC
