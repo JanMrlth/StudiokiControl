@@ -12,3 +12,6 @@ This project consists of
 
 
 https://github.com/espressif/esptool/wiki/ESP32-Boot-Mode-Selection
+
+https://github.com/apollo-ng/picoReflow
+
