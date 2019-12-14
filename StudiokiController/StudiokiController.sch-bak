@@ -1438,11 +1438,6 @@ F 3 "~" H 6050 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 3500 6200 3500
-Wire Wire Line
-	6200 3500 6200 3550
-Connection ~ 6050 3500
-Wire Wire Line
 	6050 3700 6200 3700
 Wire Wire Line
 	6200 3700 6200 3650
@@ -1572,10 +1567,10 @@ NoConn ~ 4450 3050
 Wire Wire Line
 	5600 3100 5900 3100
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP1
 U 1 1 5DF5D1E8
 P 5750 3400
-F 0 "JP?" H 5750 3175 50  0000 C CNN
+F 0 "JP1" H 5750 3175 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 5750 3266 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5750 3400 50  0001 C CNN
 F 3 "~" H 5750 3400 50  0001 C CNN
@@ -1585,10 +1580,10 @@ $EndComp
 Wire Wire Line
 	4750 4050 4850 4050
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0133
 U 1 1 5DF65AC6
 P 6300 3200
-F 0 "#PWR?" H 6300 2950 50  0001 C CNN
+F 0 "#PWR0133" H 6300 2950 50  0001 C CNN
 F 1 "GND" H 6305 3027 50  0000 C CNN
 F 2 "" H 6300 3200 50  0001 C CNN
 F 3 "" H 6300 3200 50  0001 C CNN
@@ -1596,20 +1591,18 @@ F 3 "" H 6300 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Female J?
+L Connector:Conn_01x03_Female J8
 U 1 1 5DF8FB9F
 P 6600 3550
-F 0 "J?" H 6492 3225 50  0000 C CNN
+F 0 "J8" H 6492 3225 50  0000 C CNN
 F 1 "Conn_01x03_Female" H 6492 3316 50  0000 C CNN
-F 2 "" H 6600 3550 50  0001 C CNN
+F 2 "StudiokiController:WAGO2060-473-998-404" H 6600 3550 50  0001 C CNN
 F 3 "~" H 6600 3550 50  0001 C CNN
 	1    6600 3550
 	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6400 3650 6200 3650
-Wire Wire Line
-	6200 3550 6400 3550
 Wire Wire Line
 	5550 3600 5600 3600
 Wire Wire Line
@@ -1623,10 +1616,10 @@ Connection ~ 5600 3100
 Wire Wire Line
 	5600 3100 5600 3200
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP4
 U 1 1 5DFC7168
 P 6600 2700
-F 0 "JP?" H 6600 2475 50  0000 C CNN
+F 0 "JP4" H 6600 2475 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 6600 2566 50  0000 C CNN
 F 2 "" H 6600 2700 50  0001 C CNN
 F 3 "~" H 6600 2700 50  0001 C CNN
@@ -1641,10 +1634,10 @@ Connection ~ 5900 3400
 Wire Wire Line
 	5600 3400 5550 3400
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP3
 U 1 1 5DFEAE0F
 P 6150 3200
-F 0 "JP?" H 6150 2975 50  0000 C CNN
+F 0 "JP3" H 6150 2975 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 6150 3066 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6150 3200 50  0001 C CNN
 F 3 "~" H 6150 3200 50  0001 C CNN
@@ -1663,10 +1656,6 @@ Connection ~ 5550 3400
 Wire Wire Line
 	5900 3400 6250 3400
 Wire Wire Line
-	6250 3400 6250 3450
-Wire Wire Line
-	6250 3450 6400 3450
-Wire Wire Line
 	5600 2900 5600 3000
 Wire Wire Line
 	5650 2900 5600 2900
@@ -1674,10 +1663,10 @@ Connection ~ 5600 2900
 Wire Wire Line
 	5550 3500 5950 3500
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP2
 U 1 1 5E0271E0
 P 5800 3600
-F 0 "JP?" H 5800 3375 50  0000 C CNN
+F 0 "JP2" H 5800 3375 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 5800 3466 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5800 3600 50  0001 C CNN
 F 3 "~" H 5800 3600 50  0001 C CNN
@@ -1694,4 +1683,15 @@ Wire Wire Line
 Connection ~ 5950 3500
 Wire Wire Line
 	5950 3500 6050 3500
+Wire Wire Line
+	6050 3500 6350 3500
+Wire Wire Line
+	6350 3500 6350 3450
+Wire Wire Line
+	6350 3450 6400 3450
+Connection ~ 6050 3500
+Wire Wire Line
+	6250 3550 6400 3550
+Wire Wire Line
+	6250 3400 6250 3550
 $EndSCHEMATC
