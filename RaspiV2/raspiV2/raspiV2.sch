@@ -1,0 +1,177 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Raspberry_Pi_2_3 J3
+U 1 1 5E4EFDB4
+P 3400 2800
+F 0 "J3" H 3400 4281 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 3400 4190 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 3400 2800 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 3400 2800 50  0001 C CNN
+	1    3400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E4F7F5B
+P 3400 4500
+F 0 "#PWR0101" H 3400 4250 50  0001 C CNN
+F 1 "GND" H 3405 4327 50  0000 C CNN
+F 2 "" H 3400 4500 50  0001 C CNN
+F 3 "" H 3400 4500 50  0001 C CNN
+	1    3400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4200 3000 4200
+Wire Wire Line
+	3000 4200 3000 4100
+Wire Wire Line
+	3100 4100 3100 4200
+Wire Wire Line
+	3100 4200 3200 4200
+Wire Wire Line
+	3200 4200 3200 4100
+Connection ~ 3100 4200
+Wire Wire Line
+	3200 4200 3300 4200
+Wire Wire Line
+	3300 4200 3300 4100
+Connection ~ 3200 4200
+Wire Wire Line
+	3300 4200 3400 4200
+Wire Wire Line
+	3400 4200 3400 4100
+Connection ~ 3300 4200
+Wire Wire Line
+	3400 4200 3500 4200
+Wire Wire Line
+	3500 4200 3500 4100
+Connection ~ 3400 4200
+Wire Wire Line
+	3500 4200 3600 4200
+Wire Wire Line
+	3600 4200 3600 4100
+Connection ~ 3500 4200
+Wire Wire Line
+	3600 4200 3700 4200
+Wire Wire Line
+	3700 4200 3700 4100
+Connection ~ 3600 4200
+Wire Wire Line
+	3400 4200 3400 4500
+Wire Wire Line
+	3300 1500 3200 1500
+Wire Wire Line
+	3200 1300 3200 1500
+Connection ~ 3200 1500
+Wire Wire Line
+	3600 1500 3500 1500
+Wire Wire Line
+	3500 1500 3500 1300
+Connection ~ 3500 1500
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5E4F9E7E
+P 3500 1300
+F 0 "#PWR0102" H 3500 1150 50  0001 C CNN
+F 1 "+3.3V" H 3515 1473 50  0000 C CNN
+F 2 "" H 3500 1300 50  0001 C CNN
+F 3 "" H 3500 1300 50  0001 C CNN
+	1    3500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5E4FA302
+P 3200 1300
+F 0 "#PWR0103" H 3200 1150 50  0001 C CNN
+F 1 "+5V" H 3215 1473 50  0000 C CNN
+F 2 "" H 3200 1300 50  0001 C CNN
+F 3 "" H 3200 1300 50  0001 C CNN
+	1    3200 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5E4FABA1
+P 1900 2200
+F 0 "J2" H 2008 2381 50  0000 C CNN
+F 1 "Heater" H 2008 2290 50  0000 C CNN
+F 2 "" H 1900 2200 50  0001 C CNN
+F 3 "~" H 1900 2200 50  0001 C CNN
+	1    1900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2300 2600 2300
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5E4FB99A
+P 1850 3100
+F 0 "J1" H 1958 3281 50  0000 C CNN
+F 1 "Door" H 1958 3190 50  0000 C CNN
+F 2 "" H 1850 3100 50  0001 C CNN
+F 3 "~" H 1850 3100 50  0001 C CNN
+	1    1850 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3200 2600 3200
+$Comp
+L Connector:Conn_01x05_Male J4
+U 1 1 5E4FE2BE
+P 5300 3100
+F 0 "J4" H 5272 3124 50  0000 R CNN
+F 1 "SPI" H 5272 3033 50  0000 R CNN
+F 2 "" H 5300 3100 50  0001 C CNN
+F 3 "~" H 5300 3100 50  0001 C CNN
+	1    5300 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3300 5100 3300
+Wire Wire Line
+	4200 3200 5100 3200
+Wire Wire Line
+	5100 3100 4200 3100
+Wire Wire Line
+	5100 3000 4800 3000
+Wire Wire Line
+	5100 2900 4950 2900
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5E5007DF
+P 4950 2900
+F 0 "#PWR0104" H 4950 2750 50  0001 C CNN
+F 1 "+3.3V" H 4965 3073 50  0000 C CNN
+F 2 "" H 4950 2900 50  0001 C CNN
+F 3 "" H 4950 2900 50  0001 C CNN
+	1    4950 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E50115A
+P 4800 3000
+F 0 "#PWR0105" H 4800 2750 50  0001 C CNN
+F 1 "GND" H 4805 2827 50  0000 C CNN
+F 2 "" H 4800 3000 50  0001 C CNN
+F 3 "" H 4800 3000 50  0001 C CNN
+	1    4800 3000
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
