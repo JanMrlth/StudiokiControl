@@ -4,4 +4,5 @@
   (lib (name WJ142R-5.08-3P)(type Legacy)(uri ${KIPRJMOD}/lib/WJ142R-5.08-3P.lib)(options "")(descr ""))
   (lib (name RAC03-12SK)(type Legacy)(uri ${KIPRJMOD}/lib/RAC03-12SK.lib)(options "")(descr ""))
   (lib (name MAX31865AAP_T)(type Legacy)(uri ${KIPRJMOD}/lib/MAX31865AAP_T.lib)(options "")(descr ""))
+  (lib (name TS30013-M033QFNR)(type Legacy)(uri C:/Users/marlo/Downloads/TS30013-M033QFNR-pcb-part-libraries/TS30013-M033QFNR.lib)(options "")(descr ""))
 )
