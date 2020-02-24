@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Raspberry_Pi_2_3 J3
-U 1 1 5E4EFDB4
-P 2400 2600
-F 0 "J3" H 2400 4081 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 2400 3990 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 2400 2600 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2400 2600 50  0001 C CNN
-	1    2400 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR04
 U 1 1 5E4F7F5B
 P 2400 4300
@@ -1071,4 +1060,15 @@ Wire Wire Line
 Wire Wire Line
 	8750 1650 8750 1900
 Connection ~ 7800 1900
+$Comp
+L Connector:Raspberry_Pi_2_3 J3
+U 1 1 5E4EFDB4
+P 2400 2600
+F 0 "J3" H 2400 4081 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2400 3990 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 2400 2600 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2400 2600 50  0001 C CNN
+	1    2400 2600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

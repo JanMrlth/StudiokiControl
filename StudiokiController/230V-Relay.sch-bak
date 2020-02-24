@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:StudiokiController-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -15,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L OJE-SH-112HM_000:OJE-SH-112HM_000 RLA?
+L JanSquareLib:OJE-SH-112HM_000 RLA2
 U 1 1 5DF31335
 P 5250 2750
-AR Path="/5DF31335" Ref="RLA?"  Part="1" 
+AR Path="/5DF31335" Ref="RLA2"  Part="1" 
 AR Path="/5DF2D1A8/5DF31335" Ref="RLA1"  Part="1" 
 AR Path="/5DF3EB9E/5DF31335" Ref="RLA?"  Part="1" 
 AR Path="/5DF55D6C/5DF31335" Ref="RLA2"  Part="1" 
