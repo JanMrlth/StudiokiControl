@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name raspiV2-rescue)(type Legacy)(uri ${KIPRJMOD}/raspiV2-rescue.lib)(options "")(descr ""))
+)
